@@ -1,0 +1,31 @@
+# Projeto
+
+# 1= "nr-10"
+# 2= "nr-35" 
+# 3= "brigada" 
+
+# E= "Elétrica"
+# M= "mecânica"
+# T= "T.i"
+# ADM= "Adiministração" 
+# MNT= "Manutenção"  
+# TA= "Trabalho em Altura"
+
+
+
+def cadastro():
+
+    nome = input(" >>> Digite seu nome completo: \n ")
+    setor = input(" >>> Digite o setor em que irá (E= Elétrica // M= mecânica // T= T.i // ADM= Adiministração // MNT= Manutenção // TA= Trabalho em Altura): \n" )
+    status = input(" >>> Digite a opção em que deseja (1 para NR-10 // 2 para NR-35 // 3 para brigada): \n")
+
+    if setor == "E" or  setor == "M":
+     print(f">>> ATENÇÃO - utilizar luvas de alta tensão e botas dielétricas")
+    else:
+       print("Tenha zelo pelo o que utilizar. Bom trabalho! ")
+print(cadastro())
+    
+
+
+def brigada():
+   ano= int("Digite o ano em que estamos: \n")
