@@ -1,0 +1,57 @@
+# Projeto
+
+# 1= "nr-10"
+# 2= "nr-35" 
+# 3= "brigada" 
+
+# E= "Elétrica"
+# M= "mecânica"
+# T= "T.i"
+# ADM= "Adiministração" 
+# MNT= "Manutenção"  
+# TA= "Trabalho em Altura"
+
+
+
+def cadastro():
+
+    nome = input(" >>> Digite seu nome completo: \n ")
+    setor = input(" >>> Digite o setor em que irá (E= Elétrica // M= mecânica // T= T.i // ADM= Adiministração // MNT= Manutenção // TA= Trabalho em Altura): \n" )
+    status = input(" >>> Digite a opção em que deseja (1 para NR-10 // 2 para NR-35 // 3 para brigada): \n")
+    treinamento = input(" >>> Você realizou treinamento? (s/n): \n")
+
+    if setor == "E" or  setor == "M":
+     print(f">>> ATENÇÃO - utilizar luvas de alta tensão e botas dielétricas")
+    else:
+       print("Tenha zelo pelo o que utilizar. Bom trabalho! ")
+print(cadastro())
+    
+def brigada():
+   ano= int("Digite o ano em que estamos: \n")
+
+def verificar_brigada():
+    ano_atual = int(input("Digite o ano em que estamos: "))
+    ano_treinamento = int(input("Digite o ano do último treinamento da Brigada: "))
+
+    tempo = ano_atual - ano_treinamento
+
+    if tempo > 2:
+        print(">>> Treinamento Vencido! Encaminhar para reciclagem.")
+    else:
+        print(">>> Treinamento Válido.")
+
+verificar_brigada()
+
+def funcionarios():
+   funcionarios = int(input("Digite o número de funcionários:"))
+   conect= input(">>> Os funcionários estão conectados? (s/n): \n")
+   treinamento = input(" >>> Realizou o treinamento? (s/n): \n")
+   
+   if treinamento == "s":
+      print(">>> Treinamento Válido.")
+   else:
+      print(">>> Treinamento Inválido. Faça o treinamento o quanto antes.")
+
+    
+    
+      return funcionarios, conect, treinamento 
